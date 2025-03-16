@@ -111,8 +111,13 @@
 #define     PHYSAC_PI                       3.14159265358979323846
 #define     PHYSAC_DEG2RAD                  (PHYSAC_PI/180.0f)
 
+#ifndef     PHYSAC_MALLOC
 #define     PHYSAC_MALLOC(size)             malloc(size)
+#endif      // PHYSAC_MALLOC
+
+#ifndef     PHYSAC_FREE
 #define     PHYSAC_FREE(ptr)                free(ptr)
+#endif      // PHYSAC_FREE
 
 //----------------------------------------------------------------------------------
 // Types and Structures Definition
